@@ -1,0 +1,1 @@
+package polymorphism;import java.util.Properties;public class CollectionBean {    private Properties addressList;    public void setAddressList(Properties mappings) {        this.addressList = mappings;    }}

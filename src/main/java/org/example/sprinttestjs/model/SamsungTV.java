@@ -1,0 +1,1 @@
+package org.example.sprinttestjs.model;public class SamsungTV {    public SamsungTV(){        System.out.println("===> SamsungTV 객체 생성");    }}
