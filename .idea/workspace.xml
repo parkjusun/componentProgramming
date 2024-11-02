@@ -9,22 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="950afb70-5cfd-44a2-a6ca-6b2d876ba1e6" name="Changes" comment="Component Programming 4Step&#10;- Annotation 기반 설정&#10;1. Spring 설정 파일에 'context' namespace 설정된 소스&#10;2. Annotation의 예제&#10;3. @Autowired&#10;4. @Autowired 예제&#10;5. @Qualifier&#10;6. @Resource&#10;7. @Required">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/BoardServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/BoardVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/impl/BoardDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/impl/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/common/JDBCUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/impl/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/springbook/biz/board/BoardServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/springbook/biz/user/USerServiceClient.java" afterDir="false" />
+    <list default="true" id="950afb70-5cfd-44a2-a6ca-6b2d876ba1e6" name="Changes" comment="Component Programming 5Step, 6Step&#10;5Step&#10;1. 패키지 구성&#10;2. h2 DB 세팅&#10;- 테이블 및 로우 생성&#10;- Spring MySQL 설정 &#10;3. Board 클래스 작성&#10;4. JDBCUtil.java 작성&#10;5. BoardDao 작성하기&#10;5-1. BoardDao 작성하기(insertBoard() , deleteBoard()) &#10;6. BoardService.java 인터페이스 작성&#10;7. BoardServiceImpl.java 작성&#10;8. applicationContext.xml 파일 수정 진행&#10;9. BoardServiceClient.java 작성 &#10;10. @Repository&#10;11. @Service&#10;12. applicationContext.xml 수정&#10;--------&#10;6Step&#10;1. DB 생성&#10;2. 패키지 구조 잡기&#10;3. JDBC Driver 설정&#10;4. UserVO 클래스 만들기&#10;5. JDBC 클래스 작성하기 &#10;6. UserDAO.java 클래스 작성&#10;7. UserService.java 작성&#10;8. UserServiceImpl.java 작성&#10;9. applicationContext.xml  작성&#10;10. 테스트 클래스 작성(UserServiceClient.java)&#10;11. @Repository&#10;12. @Service And @Autowired&#10;13. applicationContext.xml 설정">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/impl/BoardDAOSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/impl/UserDAOSpring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/impl/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/impl/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/impl/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/impl/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/springbook/biz/user/USerServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springbook/biz/user/USerServiceClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +90,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/polymorphism" />
       <recent name="$PROJECT_DIR$/src/main/polymorphism" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.springbook.biz.user.impl" />
     </key>
   </component>
   <component name="RunManager" selected="Application.USerServiceClient">
@@ -248,7 +246,7 @@
       <updated>1730438843636</updated>
       <workItem from="1730438844643" duration="112000" />
       <workItem from="1730438959491" duration="13912000" />
-      <workItem from="1730503749537" duration="8377000" />
+      <workItem from="1730503749537" duration="12982000" />
     </task>
     <task id="LOCAL-00001" summary="Component Programming 방법&#10;- 1Step ~ 3Step 진행">
       <option name="closed" value="true" />
@@ -266,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730452698466</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Component Programming 5Step, 6Step&#10;5Step&#10;1. 패키지 구성&#10;2. h2 DB 세팅&#10;- 테이블 및 로우 생성&#10;- Spring MySQL 설정 &#10;3. Board 클래스 작성&#10;4. JDBCUtil.java 작성&#10;5. BoardDao 작성하기&#10;5-1. BoardDao 작성하기(insertBoard() , deleteBoard()) &#10;6. BoardService.java 인터페이스 작성&#10;7. BoardServiceImpl.java 작성&#10;8. applicationContext.xml 파일 수정 진행&#10;9. BoardServiceClient.java 작성 &#10;10. @Repository&#10;11. @Service&#10;12. applicationContext.xml 수정&#10;--------&#10;6Step&#10;1. DB 생성&#10;2. 패키지 구조 잡기&#10;3. JDBC Driver 설정&#10;4. UserVO 클래스 만들기&#10;5. JDBC 클래스 작성하기 &#10;6. UserDAO.java 클래스 작성&#10;7. UserService.java 작성&#10;8. UserServiceImpl.java 작성&#10;9. applicationContext.xml  작성&#10;10. 테스트 클래스 작성(UserServiceClient.java)&#10;11. @Repository&#10;12. @Service And @Autowired&#10;13. applicationContext.xml 설정">
+      <option name="closed" value="true" />
+      <created>1730515456947</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730515456947</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +292,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Component Programming 방법&#10;- 1Step ~ 3Step 진행" />
     <MESSAGE value="Component Programming 4Step&#10;- Annotation 기반 설정&#10;1. Spring 설정 파일에 'context' namespace 설정된 소스&#10;2. Annotation의 예제&#10;3. @Autowired&#10;4. @Autowired 예제&#10;5. @Qualifier&#10;6. @Resource&#10;7. @Required" />
-    <option name="LAST_COMMIT_MESSAGE" value="Component Programming 4Step&#10;- Annotation 기반 설정&#10;1. Spring 설정 파일에 'context' namespace 설정된 소스&#10;2. Annotation의 예제&#10;3. @Autowired&#10;4. @Autowired 예제&#10;5. @Qualifier&#10;6. @Resource&#10;7. @Required" />
+    <MESSAGE value="Component Programming 5Step, 6Step&#10;5Step&#10;1. 패키지 구성&#10;2. h2 DB 세팅&#10;- 테이블 및 로우 생성&#10;- Spring MySQL 설정 &#10;3. Board 클래스 작성&#10;4. JDBCUtil.java 작성&#10;5. BoardDao 작성하기&#10;5-1. BoardDao 작성하기(insertBoard() , deleteBoard()) &#10;6. BoardService.java 인터페이스 작성&#10;7. BoardServiceImpl.java 작성&#10;8. applicationContext.xml 파일 수정 진행&#10;9. BoardServiceClient.java 작성 &#10;10. @Repository&#10;11. @Service&#10;12. applicationContext.xml 수정&#10;--------&#10;6Step&#10;1. DB 생성&#10;2. 패키지 구조 잡기&#10;3. JDBC Driver 설정&#10;4. UserVO 클래스 만들기&#10;5. JDBC 클래스 작성하기 &#10;6. UserDAO.java 클래스 작성&#10;7. UserService.java 작성&#10;8. UserServiceImpl.java 작성&#10;9. applicationContext.xml  작성&#10;10. 테스트 클래스 작성(UserServiceClient.java)&#10;11. @Repository&#10;12. @Service And @Autowired&#10;13. applicationContext.xml 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="Component Programming 5Step, 6Step&#10;5Step&#10;1. 패키지 구성&#10;2. h2 DB 세팅&#10;- 테이블 및 로우 생성&#10;- Spring MySQL 설정 &#10;3. Board 클래스 작성&#10;4. JDBCUtil.java 작성&#10;5. BoardDao 작성하기&#10;5-1. BoardDao 작성하기(insertBoard() , deleteBoard()) &#10;6. BoardService.java 인터페이스 작성&#10;7. BoardServiceImpl.java 작성&#10;8. applicationContext.xml 파일 수정 진행&#10;9. BoardServiceClient.java 작성 &#10;10. @Repository&#10;11. @Service&#10;12. applicationContext.xml 수정&#10;--------&#10;6Step&#10;1. DB 생성&#10;2. 패키지 구조 잡기&#10;3. JDBC Driver 설정&#10;4. UserVO 클래스 만들기&#10;5. JDBC 클래스 작성하기 &#10;6. UserDAO.java 클래스 작성&#10;7. UserService.java 작성&#10;8. UserServiceImpl.java 작성&#10;9. applicationContext.xml  작성&#10;10. 테스트 클래스 작성(UserServiceClient.java)&#10;11. @Repository&#10;12. @Service And @Autowired&#10;13. applicationContext.xml 설정" />
   </component>
 </project>
