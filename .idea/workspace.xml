@@ -9,7 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="950afb70-5cfd-44a2-a6ca-6b2d876ba1e6" name="Changes" comment="" />
+    <list default="true" id="950afb70-5cfd-44a2-a6ca-6b2d876ba1e6" name="Changes" comment="Component Programming 4Step&#10;- Annotation 기반 설정&#10;1. Spring 설정 파일에 'context' namespace 설정된 소스&#10;2. Annotation의 예제&#10;3. @Autowired&#10;4. @Autowired 예제&#10;5. @Qualifier&#10;6. @Resource&#10;7. @Required">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/BoardServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/BoardVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/impl/BoardDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/board/impl/BoardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/common/JDBCUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/impl/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springbook/biz/user/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/springbook/biz/board/BoardServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/springbook/biz/user/USerServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,9 +70,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BoardServiceClient.executor": "Debug",
     "Application.CollectionBeanClient.executor": "Debug",
     "Application.HomeController.executor": "Debug",
     "Application.TVUser.executor": "Debug",
+    "Application.USerServiceClient.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 9.0.96.executor": "Debug",
     "git-widget-placeholder": "master",
@@ -79,7 +97,20 @@
       <recent name="$PROJECT_DIR$/src/main/polymorphism" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CollectionBeanClient">
+  <component name="RunManager" selected="Application.USerServiceClient">
+    <configuration name="BoardServiceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.springbook.biz.board.BoardServiceClient" />
+      <module name="SprintTestJS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springbook.biz.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CollectionBeanClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sprinttestjs.CollectionBeanClient" />
       <module name="SprintTestJS" />
@@ -112,6 +143,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.sprinttestjs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="USerServiceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.springbook.biz.user.USerServiceClient" />
+      <module name="SprintTestJS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springbook.biz.user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,6 +222,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.USerServiceClient" />
+        <item itemvalue="Application.BoardServiceClient" />
         <item itemvalue="Application.CollectionBeanClient" />
         <item itemvalue="Application.TVUser" />
         <item itemvalue="Application.HomeController" />
@@ -201,8 +247,26 @@
       <option name="presentableId" value="Default" />
       <updated>1730438843636</updated>
       <workItem from="1730438844643" duration="112000" />
-      <workItem from="1730438959491" duration="7419000" />
+      <workItem from="1730438959491" duration="13912000" />
+      <workItem from="1730503749537" duration="8377000" />
     </task>
+    <task id="LOCAL-00001" summary="Component Programming 방법&#10;- 1Step ~ 3Step 진행">
+      <option name="closed" value="true" />
+      <created>1730447003382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730447003382</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Component Programming 4Step&#10;- Annotation 기반 설정&#10;1. Spring 설정 파일에 'context' namespace 설정된 소스&#10;2. Annotation의 예제&#10;3. @Autowired&#10;4. @Autowired 예제&#10;5. @Qualifier&#10;6. @Resource&#10;7. @Required">
+      <option name="closed" value="true" />
+      <created>1730452698466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730452698466</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,5 +282,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Component Programming 방법&#10;- 1Step ~ 3Step 진행" />
+    <MESSAGE value="Component Programming 4Step&#10;- Annotation 기반 설정&#10;1. Spring 설정 파일에 'context' namespace 설정된 소스&#10;2. Annotation의 예제&#10;3. @Autowired&#10;4. @Autowired 예제&#10;5. @Qualifier&#10;6. @Resource&#10;7. @Required" />
+    <option name="LAST_COMMIT_MESSAGE" value="Component Programming 4Step&#10;- Annotation 기반 설정&#10;1. Spring 설정 파일에 'context' namespace 설정된 소스&#10;2. Annotation의 예제&#10;3. @Autowired&#10;4. @Autowired 예제&#10;5. @Qualifier&#10;6. @Resource&#10;7. @Required" />
   </component>
 </project>

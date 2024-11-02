@@ -1,0 +1,1 @@
+package com.springbook.biz.user;import com.springbook.biz.user.impl.UserDAO;import org.springframework.beans.factory.annotation.Autowired;import org.springframework.stereotype.Service;public interface UserService {    UserVO getUser(UserVO vo);}
